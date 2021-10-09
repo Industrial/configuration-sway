@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+wl-paste -t text --watch clipman store &
+# waybar &
+blueman-applet &
+nm-applet --indicator
+
+# Kill everything on exit (Ctrl-C)
+trap "kill -- -$$" EXIT
